@@ -1,0 +1,6 @@
+{%  extends 'base.html' %}
+
+{%  block content %}
+    <h1>{{object.title}}</h1>
+    <p>{% if object.text != None and object.text != ''%}{{ object.text }}{% else %}Coming soon{% endif %}</p>
+{%  endblock %}
