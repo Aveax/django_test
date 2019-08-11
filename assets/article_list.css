@@ -1,0 +1,27 @@
+.article-list * {margin: 0; padding: 0;}
+
+.article-list div {
+    margin: 20px;
+}
+
+.article-list ul {
+    list-style-type: none;
+}
+
+.article-list h3 {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.article-list li p {
+    font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+.article-list li {
+    padding: 10px;
+    overflow: auto;
+}
+
+.article-list li:hover {
+    background: #eee;
+    cursor: pointer;
+}

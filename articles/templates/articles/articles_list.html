@@ -1,7 +1,14 @@
 {%  extends 'base.html' %}
-
+{% load static from staticfiles %}
 {%  block content %}
-    {% for instance in object_list %}
-        <p>{{ instance.id }} - <a href="{{ instance.get_absolute_url }}">{{ instance.title }}</a></p>
-    {% endfor %}
+    <div class="article-list">
+        <link rel="stylesheet" href="{%  static 'article_list.css' %}">
+        <ul>
+            {% for instance in object_list %}
+                <li>
+                    <h3><a href="{{ instance.get_absolute_url }}">{{ instance.title }}</a></h3>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 {%  endblock %}

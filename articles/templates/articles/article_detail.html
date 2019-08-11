@@ -1,6 +1,11 @@
 {%  extends 'base.html' %}
-
+{% load static from staticfiles %}
 {%  block content %}
-    <h1>{{object.title}}</h1>
-    <p>{% if object.text != None and object.text != ''%}{{ object.text }}{% else %}Coming soon{% endif %}</p>
+    <div class="article">
+        <link rel="stylesheet" href="{%  static 'article.css' %}">
+        <h1>{{object.title}}</h1>
+        <p>{% if object.text != None and object.text != ''%}{{ object.text }}{% else %}Coming soon{% endif %}</p>
+        <input type="button" value="Update" onclick="window.location.href='./update/'" />
+        <input type="button" value="Delete" onclick="window.location.href='./delete/'" />
+    </div>
 {%  endblock %}

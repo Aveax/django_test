@@ -3,6 +3,7 @@
 {%  block content %}
     <form action="." method="POST">{% csrf_token %}
         <h1>Do u rly want to delete this article</h1>
-        <p><input type="submit" value="Yes"/> <a href="../">Cancel</a></p>
+        <input type="submit" value="Yes"/>
+        <input type="button" value="No" onclick="window.location.href='../'" />
     </form>
 {%  endblock %}

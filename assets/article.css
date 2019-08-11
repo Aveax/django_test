@@ -1,0 +1,19 @@
+.article * {margin: 0; padding: 0;}
+
+.article div {
+    margin: 20px;
+}
+
+.article ul {
+    list-style-type: none;
+}
+
+.article h1 {
+    margin: 20px;
+    font: bold 40px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.article p {
+    margin: 20px;
+    font: 200 16px/1.5 Georgia, Times New Roman, serif;
+}

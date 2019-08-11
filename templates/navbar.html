@@ -1,5 +1,9 @@
-<nav>
+{% load static from staticfiles %}
+<div class="nav">
+    <link rel="stylesheet" href="{%  static 'navbar.css' %}">
     <ul>
-        <li>Nav bar coming soon</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/articles/create/">Create Article</a></li>
     </ul>
-</nav>
+</div>
